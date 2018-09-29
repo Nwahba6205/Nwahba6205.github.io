@@ -1,0 +1,56 @@
+body {
+	background: #FA8072;
+	font-family: Century Gothic;
+}
+h1 {
+	font-size: 14px;
+	text-align: center;
+}
+a {
+	color" #000000;
+	text-decoration: underline;
+	text-align: center;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+}
+h2 {
+	font-size: 18px;
+}
+p {
+	font-size: 18px;
+}
+img {
+	width: 200px
+}h4 {
+	font-size: 14px;
+	text-align: center;
+}
+h5{
+	font-size: 14px;
+	text-align: center;
+}
+h6{
+	font-size: 18px;
+	text-decoration: underline;
+}
+#para1 {
+	text-align: center;
+    color: blue;
+}
+#para2 {
+	text-align: center;
+    color: green;
+}
+#para3 {
+	text-align: center;
+    color: white;
+}
+.intro {
+    background-color: #1E90FF;
+}
+p { 
+    background-color: orange;
+}
