@@ -1,0 +1,48 @@
+body {
+	background-color: transparent;
+	background-image: url("Blue.jpg");
+    background-repeat: no repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Century Gothic;
+}
+
+img {
+	margin: 38px
+
+}
+img {
+	border: 3px solid aquamarine;
+}
+img {
+	padding: 5px
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+h2 {
+	font-size: 25px;
+	
+}
+h3 {
+	font-size: 25px;
+}
+p {
+	font-size: 20px;
+}
+
+a {
+    color: green;
+	margin: 25px;
+	font-size: 20px
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  width: 400px;
