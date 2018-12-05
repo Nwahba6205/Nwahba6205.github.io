@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Nick's First Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<svg width="150px" height="104px">
+  <polygon points="50,5, 20,99, 95,39, 5,39, 80,99"
+  style="fill:PaleTurquoise;stroke:black;stroke-width:5;fill-rule:evenodd;"/>
+</svg>
+
+
+	<div class="text-center" id="header">
+	<h1>Nickster's Website</h1>
+	<p class="intro">Computer Science Goals</p>
+	<p>Hello, welcome to my first ever website! I hope you love it :)</p>
+	<a class="active" href="index.html">Home</a>
+	<a href="AboutMe.html">About Me</a>
+	<a href="Projects.html">Projects</a>
+	<a href="LifeAchievements.html">Achievements</a>
+	<a href="Usability.html">Accessibility</a>
+	<a href="Classes.html">Classes</a>
+	<a href="https://www.linkedin.com/in/nicholas-wahba-940622176/">Linkedin</a>
+	</div>
+<hr>
+	
+<div class="flex-container">
+  <img src="Images/Me.jpg" alt="Picture of Face" align="left" height="300" width="300"/>
+  <img src="Images/College.jpg" alt="FGCU" align="right" height="300" width="300"/>
+  <img src="Images/Home.jpg" alt="Key Largo" align="center" height="300" width="300"/>
+  <img src="Images/Stud.jpg" alt="Looking Good" align="center" height="300" width="300"/>
+</div>
+
+
+<img src="Images/Skyscraper.jpg" alt="Me at New York" align="center" height="300" width="300"/>
+<img src="Images/Fishes.jpg" alt="Fishes in a Light Bulb" align="center" height="300" width="300"/>
+<img src="Images/Liberty.jpg" alt="Statue of Liberty" align="center" height="300" width="300"/>
+<img src="Images/Roses.jpg" alt="Watercolor Painting" align="center" height="300" width="300"/>
+
+<div style = "text-align:center;">
+         <canvas id="myCanvas" width="460" height="100" style="border:5px solid #000000;">
+			</canvas>
+
+		<script>
+			var c = document.getElementById("myCanvas");var ctx = c.getContext("2d");
+			ctx.font = "30px Verdana";
+			var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+			gradient.addColorStop("0", "red");
+			gradient.addColorStop("0.5", "orange");
+			gradient.addColorStop("1.0", "yellow");
+			ctx.fillStyle = gradient;
+			ctx.fillText("Welcome to Nickster's World!", 10, 63);
+</script>
+      </div>
+	  
+	  <audio controls="audiocontrols"  style="display:block;margin:auto; text-align: center">
+				<source src="Masquerade.mp3" type="audio/mpeg">
+				</audio>
+</html>
