@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--This page is called Caesar Cipher. It includes a Caesar Cipher.--> 
+<div style="text-align:center">
+<title>Nick's First Website</title>
+<a class="active" href="index.html">Home</a>
+	<a href="AboutMe.html">About Me</a>
+	<a href="Projects.html">Projects</a>
+	<a href="LifeAchievements.html">Achievements</a>
+	<a href="Usability.html">Accessibility</a>
+	<a href="Classes.html">Classes</a>
+	<a href="https://www.linkedin.com/in/nicholas-wahba-940622176/">Linkedin</a>
+	<a href="JavaScriptIPO.html">Funny Math Trick</a>
+	<a href="caesar.html">Caesar Cipher</a>
+	
+<h1>Caesar Cipher</h1>
+<p>Text Box:</p>
+<script type="text/javascript">
+var alpha1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_-+=[]\{}|;':,./<>?";
+
+var alpha2 = alpha1.split('').reverse().join('');  // could also shuffle this array to scramble more
+
+ 
+
+function encode(message,flag) {
+
+var c, p;
+
+var m1 = message;
+
+var m2 = "";
+for (var i = 0; i < m1.length; i++) {
+
+c = m1[i];
+
+if (flag) { p = alpha1.indexOf(c); } else { p = alpha2.indexOf(c); }
+
+if (p == -1) { m2 += c; }
+
+else {if (flag) { m2 += alpha2[p]; } else m2 += alpha1[p]; }
+
+}
+
+return cipherForm.message.value = m2;
+
+}
+
+ 
+
+</script>
+<form name="cipherForm">
+
+<textarea name="message" cols="50" rows="7">
+
+Enter the message you want to encode/decode
+
+with Caesar's Cipher then click on the
+
+corresponding button below.
+
+</textarea><br/>
+
+<input type="button" value="Encode" onclick="encode(cipherForm.message.value,true);" />
+
+<input type="button" value="Decode" onclick="encode(cipherForm.message.value,false);" />
+
+</form>
+
+</body>
+
+</html>
+
+
+

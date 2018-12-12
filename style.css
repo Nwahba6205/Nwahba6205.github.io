@@ -1,0 +1,53 @@
+/* This is main background for my website!*/
+body {
+	background-color: transparent;
+	background-image: url("Blue.jpg");
+    background-repeat: no repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Century Gothic;
+}
+/* This is how I was able to get the borders and pictures to be seperated from each other!*/
+img {
+	margin: 38px
+
+}
+img {
+	border: 3px solid aquamarine;
+}
+img {
+	padding: 5px
+}
+/* Pretty much in my website, h1 is known to be the popular heading. The rest of the headings are just extras.*/
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+h2 {
+	font-size: 25px;
+	
+}
+h3 {
+	font-size: 25px;
+}
+/* This is the font size of my paragraph of my website.*/
+p {
+	font-size: 20px;
+}
+/* This is color for my hyperlink navigation bar!*/
+a {
+    color: green;
+	margin: 25px;
+	font-size: 20px
+}
+/* These two are for my photos on the homepage*/
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  width: 400px;
+}

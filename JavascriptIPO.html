@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--This page is called Funny Math Trick. This is because of IPO that is included.--> 
+<div style="text-align:center">
+<title>Nick's First Website</title>
+<a class="active" href="index.html">Home</a>
+	<a href="AboutMe.html">About Me</a>
+	<a href="Projects.html">Projects</a>
+	<a href="LifeAchievements.html">Achievements</a>
+	<a href="Usability.html">Accessibility</a>
+	<a href="Classes.html">Classes</a>
+	<a href="https://www.linkedin.com/in/nicholas-wahba-940622176/">Linkedin</a>
+	<a href="JavascriptIPO.html">Funny Math Trick</a>
+	<a href="caesar.html">Decode The Message</a>
+	
+<h1>Funny Quick Math Video</h1>
+
+<p>Type in any number in the text box and it'll come out with a different number</p>
+<p>To know why there's a different number, right click and view the source and script to see my code. </p>
+
+<label for="in">Type a number in this box:</label>
+<input id="in">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="out"></p>
+ 
+<script>
+function myFunction() {
+    var inVar, outVar;
+	
+    // Input
+    inVar = document.getElementById("in").value;
+   
+    // Processing
+    outVar = parseInt(inVar) + 5 - 4 + 3 - 2 + 1 - 6;
+ 
+    // Output
+    document.getElementById("out").innerHTML = outVar;
+</script>
+</html>
